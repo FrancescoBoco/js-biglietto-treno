@@ -27,6 +27,11 @@ if (Age < 18){
     document.writeln ('Il prezzo del biglietto è' + ' ' + ticketDiscount )
 }
 
+if (Age > 18 , Age < 60){
+    document.writeln ('Il prezzo del biglietto è' + ' ' + ticketPrice )
+}
+
+
 if (Age > 60){
     document.writeln ( 'Il prezzo del biglietto è'  + ' ' +  ticketDiscountSenior )
 }
