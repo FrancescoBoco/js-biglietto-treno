@@ -9,6 +9,9 @@ const verificationKilo = parseInt(numberKilometers)
 const verificationAge = parseInt(Age)
 
 
+
+
+
 // CALCOLO PREZZO BIGLIETTO
 
 
@@ -24,19 +27,19 @@ var ticketDiscount = (ticketPrice * 20) / 100
 var ticketDiscountSenior = (ticketPrice * 40) / 100 
 
 if (Age < 18){
-    document.writeln ('Il prezzo del biglietto è' + ' ' + ticketDiscount )
+    document.writeln ('Il prezzo del biglietto è' + ' ' + (ticketPrice - ticketDiscount) )
 }
 
-if (Age > 18 , Age < 60){
+if (Age > 18 && Age < 60){
     document.writeln ('Il prezzo del biglietto è' + ' ' + ticketPrice )
 }
 
 
 if (Age > 60){
-    document.writeln ( 'Il prezzo del biglietto è'  + ' ' +  ticketDiscountSenior )
+    document.writeln ( 'Il prezzo del biglietto è'  + ' ' +  (ticketPrice - ticketDiscountSenior) )
 }
 
-
+console.log ( typeof ticketDiscount,typeof ticketPrice )
 
 // -----------------
 // NON HA FUNZIONATO 
